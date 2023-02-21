@@ -1,0 +1,11 @@
+.button {
+  border: 3px solid white;
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: .4s;
+
+  &:hover {
+    background: rgba(255, 255, 255, .1);
+  }
+}

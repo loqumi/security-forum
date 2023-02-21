@@ -1,0 +1,41 @@
+.card {
+  margin: 0 10px 40px 0;
+  max-width: 330px;
+}
+
+.speaker_name {
+  color: white;
+  margin: 35px 0 10px 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: left;
+}
+
+.speaker_photo {
+  object-fit: cover;
+}
+
+.line {
+  width: 243px;
+  border-bottom: 3px solid #534878;
+}
+
+.description {
+  margin: 10px 0 15px 0;
+  font-weight: 200;
+  line-height: 21px;
+  color: #C2BCD2;
+}
+
+.button {
+  font-weight: 200;
+  border-bottom: white solid 2px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    opacity: 1;
+  }
+}

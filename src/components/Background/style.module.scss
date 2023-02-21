@@ -1,0 +1,102 @@
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  z-index: 0;
+}
+
+.ellipse_top {
+  position: absolute;
+  width: 976px;
+  min-height: 587px;
+  left: 500px;
+  top: -150px;
+
+  background: radial-gradient(76.43% 110.35% at 15.78% 19.68%, #190022 43.22%, #060606 78.37%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  filter: blur(180px);
+}
+
+.ellipse_header {
+  position: absolute;
+  width: 1906.5px;
+  min-height: 1849px;
+  left: -300px;
+  top: -87px;
+
+  background: linear-gradient(173.57deg, #00092E 53.34%, #03001F 69.51%, #110520 81.76%);
+  filter: blur(122px);
+}
+
+.photo {
+  position: absolute;
+  min-width: 1400px;
+  min-height: 900px;
+  right: -160px;
+  top: 250px;
+}
+
+.gradient_body_r{
+  position: absolute;
+  width: 1389.9px;
+  min-height: 2712.86px;
+  left: 1234.82px;
+  top: 50vh;
+
+  background: radial-gradient(50% 50% at 50% 50%, rgba(119, 1, 77, 0.5) 3.59%, rgba(92, 14, 191, 0.5) 100%);
+  opacity: 0.5;
+  filter: blur(1010px);
+  border-radius: 4000px;
+  transform: rotate(-120deg) scale(1.2);
+}
+
+.ellipse_body {
+  position: absolute;
+  width: 100%;
+  min-height: 177px;
+  right: -100px;
+  top: 135vh;
+
+  background: #060606;
+  filter: blur(30px);
+}
+
+.ellipse_footer {
+  position: absolute;
+  width: 100%;
+  bottom: -800px;
+  background: radial-gradient(35.25% 81.65% at 80.64% -9.36%, #060606 33.06%, rgba(99, 19, 200, 0.5) 76.26%);
+  opacity: 0.4;
+  filter: blur(280px);
+  transform: rotate(90deg) scale(2);
+}
+
+@media screen and (max-width: 600px) {
+  .ellipse_footer {
+    bottom: 0;
+  }
+  .ellipse_body {
+    right: -60px;
+    top: 135vh;
+  }
+  .ellipse_header{
+    left: -170px;
+    top: -125px;
+  }
+  .ellipse_top {
+    left: 195px;
+    top: 36px;
+    filter: blur(140px);
+  }
+  .gradient_body_r {
+    rotate: 300deg;
+    top: 225vh;
+    left: -8px;
+  }
+}
